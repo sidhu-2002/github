@@ -1,0 +1,254 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: rgb(213, 221, 196);
+}
+h1{
+    font-family: "DM Serif Display", serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: fixed;
+    background-color: white;
+    
+}
+header ul{display: flex;
+    justify-content: space-around;
+    
+}
+header li{
+    margin: 20px;
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header ul li a i {
+    margin: 7px;
+}
+header ul li a:hover{
+    color: rgb(114, 103, 103);
+    font-style: oblique;
+}
+/* section{
+    background-image: url(https://www.pngdow.com/files/preview/960x960/11687239785jcxkiixo3j724yz2gljxi2r5nxtcmainb8rwx95u8bwyr1wtaehmufvdlokxhfgtj4t6z7sy4bqohfag4fda4cenfrfpu2isekes.png);
+    background-repeat: no-repeat;
+    align-items: left;
+} */
+/* section ul{
+    justify-content: space-around;
+    margin-left: 150px;
+    font-size: 50px;
+ }
+ section ul li{
+    margin: 20px;
+    list-style: none;
+    color: rgb(2, 2, 2);
+   
+ }
+ section h1{
+    text-align: center;
+    margin-top: 300px;
+    color: rgb(30, 28, 28);
+    font-weight: 800;
+ } */
+ 
+ 
+span p{
+    color: rgb(121, 114, 114);
+    font-size: large;
+    text-align: right;
+    margin-right: 100px;
+    text-align: justify;
+    
+    
+    /* padding: 50px; */
+ }
+ section  img{
+    margin-left: 100px;
+    
+ }
+ 
+ h2{
+
+
+     text-align: center; 
+    color: rgb(12, 11, 11);
+
+ }
+ 
+
+ section img {
+    float: left;
+}
+section h1{
+    text-align: center;
+    
+}
+section h1::first-letter{
+    color: crimson;
+
+}
+.row2{
+    width: 100%;
+    height: 300px;
+    margin-left: 150px;
+}
+.col2{
+    width:240px ;
+    height:250px ;
+    background-color: whitesmoke;
+    margin: 20px;
+    float: left;
+    box-shadow: 4px 5px 6px 8px rgb(57, 51, 51);
+    margin-left: 38px;
+    border-radius:30px ;
+
+}
+.col2 p{ text-align: center;
+}
+#welcome{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: rgb(20, 21, 21);
+    padding: 50px;
+    border: 5px double white;
+    background-color: rgba(240, 255, 255, 0.403);
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .row3{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: transparent;
+  }
+  .col3{
+    width: 200px;
+    height: 400px;
+    background-color: transparent;
+    margin-left: 120px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 4px white solid;
+
+  }
+ .col3 img{
+    margin-right: 100%;
+    margin-left: 0%;
+ }
+ #web{
+    margin-top: 100px;
+    padding-top: 50px;
+ }
+ .col3:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  footer{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(213, 221, 196);
+}
+footer h1{
+    color: black;
+}
+/* footer img{
+    width: 30px;
+    height: 30px;
+    margin-left: 300px; 
+    padding: 0%;
+
+
+} */
+ .row99{
+    display: flex;
+ }
+ .col99{
+    width: 30px;
+    height: 30px;
+    margin-left: 300px;
+ }
+ .col89{
+    padding-left: 10px;
+    margin-left: 200px;
+
+ }
+ .col79{
+    padding-left: 79px;
+    margin-left: 50px;
+ }
+ .col69{
+    padding-left: 20px;
+    margin-left: 50px;
+ }
